@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./p5.js"></script>
+        <script src="./examples.js"></script>
+    </head>
+    <body style="display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; background-color:#324F9F;">
+        <div style="display: flex; flex-direction: column; width: 85%; height: fit-content; align-items: center; background-color: white;">
+            <div style="background-color: #324F9F; display: flex; flex-direction: column; align-items: center; color: white;">
+                <h1>The Three Game Designers Problem</h1>
+                <p>
+                    <i>This problem was first thought of by Marton Benedek and Joerg Fliege at a mathematics workshop on Collaborative Game Theory in Southampton, UK, July 2023. What follows is a recounting of their discussion and further discussions with James Stallwood.</i>
+                </p>
+            </div>
+            
+            <div style="display: flex; flex-direction: row; width: 100%; height: fit-content; padding: 1%;">
+                <div style="width: 50%; margin: 2%;">
+                    <p>Three friends, Venny, Vanissa, and Adam, decide to make a game together. They know that if they work hard their game could be very successful. But the amount of their game could make depends on how they work together.</p>
+                    <ol>
+                        <li>If they all work separately, they won't be successful at all. They don't have enough skills by themselves to make a really successful game. So if Venny, Vanissa, and Adam all go their separate ways they will make no money at all.</li>
+                        <li>If they all work together, they know they could make a really great game that would be worth £24m.</li>
+                        <li>If Venny and Vanissa work together, they could make a pretty good game that would be worth £14m, but Adam would receive £9m from royalties.</li>
+                        <li>If Vanissa and Adam work together, they could make an ok game, worth £12m, but Venny would receive £9m from royalties.</li>
+                        <li>If Venny and Adam work together, the could make a good game, worth £13m, but Vanissa would receive £9m from royalties.</li>
+                    </ol>
+                    <p>Luckily, for any of the two friends working together, the third friend's royalties aren't paid from their earnings. They come from a different pool of money.</p>
+                </div>
+                <div id="sketch_one" style="width: 50%;"></div>
+            </div>
+            <div style="border: 1px solid; border-color: rgba(0, 0, 0, 0.4); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4); padding: 1%; width: 80%; height: fit-content;">
+                <h2>Question: Can a stable coalition be formed by any of the three designers?</h2>
+                <h3>Initial Reaction Summary: M.B. and J.F.</h3>
+                <p>No. The presence of royalties option means that any of the designers would walk away from the grand coalition in favor as they could make more (or equal) money not doing any active development and receiving royalties instead. No designer would prefer all designers to walk away as that would mean that all the designers would receive no money at all. Thus, a two-party coalition would form but we cannot ascertain which one.</p>
+                <h3>Initial Reaction Summary: J.S.</h3>
+                <p>
+                    Yes, assuming some money was always preferable to none and the designers were prepared to be enter negotiations. An uneasy alliance.
+                    <ul>
+                        <li>Venny adds the most value to any coalition. So she could argue that either everyone join together or she will walk.</li>
+                        <li>If Venny walks and assuming Vanissa and Adam still want to form a coalition to make some money rather than none, Venny will earn as much as if she was in the grand coalition from royalties and Adam and Vanissa will earn in their dual coalition than in the grand coalition.</li>
+                        <li>If Adam or Vanissa decides to walk away, Venny can threaten to walk away too to protect her standing.</li>
+                        <li>If Venny defensively announces that she will walk away, the other two will be forced to make a coalition that will make less money than they would have made in the grand coalition.</li>
+                    </ul>
+                    Thus, the ultimate question is, "Is spite worth several million pounds to either Vanissa or Adam, or will they be forced to acquiesce to Venny's demands to meet the key assumption that some money is better than none?"
+                </p>
+            </div>
+            <p></p>
+        </div>
+    </body>
+</html>
